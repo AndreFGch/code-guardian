@@ -2,27 +2,53 @@
 
 ## Local personal storage
 
-Recommended personal storage path on Windows:
+Clone or download this repository wherever you keep your tools or Claude Code skills.
 
-```text
-D:\Aplicaciones\Skills\code-guardian
+Example:
+
+```bash
+git clone https://github.com/AndreFGch/code-guardian.git
 ```
-
-This keeps the skill separate from any specific project.
 
 ## Project installation
 
 Claude Code project skills should be placed under:
 
 ```text
-PROJECT_ROOT\.claude\skills\code-guardian\SKILL.md
+YOUR_PROJECT/.claude/skills/code-guardian/SKILL.md
 ```
 
-Example:
+To install Code Guardian in a project, copy this folder:
 
 ```text
-D:\Aplicaciones\Nebulosa\.claude\skills\code-guardian\SKILL.md
+code-guardian/skills/code-guardian
 ```
+
+into:
+
+```text
+YOUR_PROJECT/.claude/skills/code-guardian
+```
+
+## Windows example
+
+```powershell
+mkdir "YOUR_PROJECT\.claude\skills"
+
+xcopy "code-guardian\skills\code-guardian" "YOUR_PROJECT\.claude\skills\code-guardian" /E /I
+```
+
+Replace `YOUR_PROJECT` with the path to your project.
+
+## macOS / Linux example
+
+```bash
+mkdir -p YOUR_PROJECT/.claude/skills
+
+cp -R code-guardian/skills/code-guardian YOUR_PROJECT/.claude/skills/code-guardian
+```
+
+Replace `YOUR_PROJECT` with the path to your project.
 
 ## Suggested workflow
 
