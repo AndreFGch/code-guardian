@@ -1,0 +1,25 @@
+﻿# OS files
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Dependencies / build outputs
+node_modules/
+dist/
+build/
+coverage/
+
+# Temporary files
+tmp/
+temp/
