@@ -149,9 +149,11 @@ Code Guardian reports should follow this structure:
 # Code Guardian Report
 
 ## 1. Scope
+
 What was reviewed and what was not reviewed.
 
 ## 2. Repository snapshot
+
 - Current folder:
 - Git branch:
 - Git status:
@@ -161,25 +163,33 @@ What was reviewed and what was not reviewed.
 ## 3. Findings by severity
 
 ### Critical
+
 Issues that may expose secrets, destroy data, deploy accidentally, or cause major security risk.
 
 ### High
+
 Issues that may break builds, hide risky behavior, or create maintainability/security problems.
 
 ### Medium
+
 Issues that should be improved but do not block immediate progress.
 
 ### Low
+
 Cleanups, naming, documentation, consistency, or small improvements.
 
 ## 4. Evidence
+
 List the files or observations that support the findings.
 
 ## 5. Recommended next steps
+
 Small, ordered tasks. Each task should modify no more than 3 to 5 files.
 
 ## 6. Before-changing plan
+
 If implementation is requested, list:
+
 - files you would touch;
 - why each file must be touched;
 - expected risk;
@@ -299,10 +309,9 @@ License
 This project is licensed under the MIT License.
 
 
-Después de pegarlo:
+Después de guardarlo, ejecutá:
 
 ```powershell
-git status
 git add README.md
-git commit -m "Improve README installation instructions"
-git push
+git rebase --continue
+git status
